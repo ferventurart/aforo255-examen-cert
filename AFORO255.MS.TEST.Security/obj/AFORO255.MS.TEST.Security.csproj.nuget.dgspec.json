@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Security\\AFORO255.MS.TEST.Security.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\MS.AFORO255.Cross.Jwt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\MS.AFORO255.Cross.Jwt.csproj",
+        "projectName": "MS.AFORO255.Cross.Jwt",
+        "projectPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\MS.AFORO255.Cross.Jwt.csproj",
+        "packagesPath": "C:\\Users\\ventuo01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ventuo01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://proget.dub.irishjobs.ie/Nuget/default": {},
+          "http://proget.saongroup.aws/nuget/Default": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Security\\AFORO255.MS.TEST.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Security\\AFORO255.MS.TEST.Security.csproj",
+        "projectName": "AFORO255.MS.TEST.Security",
+        "projectPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Security\\AFORO255.MS.TEST.Security.csproj",
+        "packagesPath": "C:\\Users\\ventuo01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Security\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ventuo01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://proget.dub.irishjobs.ie/Nuget/default": {},
+          "http://proget.saongroup.aws/nuget/Default": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\MS.AFORO255.Cross.Jwt.csproj": {
+                "projectPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\MS.AFORO255.Cross.Jwt.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

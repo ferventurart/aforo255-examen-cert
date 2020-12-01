@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cross", "Cross", "{707E24B0-E341-4ADD-956B-CF97243CC02C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{C2075EA8-266E-4BF9-8EC2-CE9DDF9E9177}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{D1DB4205-40D8-4B31-B30A-56889735110F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{DFA29E0D-8372-465E-9997-58043DA85BAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Security", "1 - Security", "{AFA8682A-AC96-4CCF-B9AD-68C7E4B3C3C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFORO255.MS.TEST.Security", "AFORO255.MS.TEST.Security\AFORO255.MS.TEST.Security.csproj", "{D3F4D7B1-1506-4668-88F9-4A31040D9FBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.AFORO255.Cross.Jwt", "AFORO255.MS.TEST.Jwt\MS.AFORO255.Cross.Jwt.csproj", "{30969ECB-4496-4468-B1A2-ED4783CC404D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3F4D7B1-1506-4668-88F9-4A31040D9FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F4D7B1-1506-4668-88F9-4A31040D9FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F4D7B1-1506-4668-88F9-4A31040D9FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F4D7B1-1506-4668-88F9-4A31040D9FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30969ECB-4496-4468-B1A2-ED4783CC404D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30969ECB-4496-4468-B1A2-ED4783CC404D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30969ECB-4496-4468-B1A2-ED4783CC404D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30969ECB-4496-4468-B1A2-ED4783CC404D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D1DB4205-40D8-4B31-B30A-56889735110F} = {C2075EA8-266E-4BF9-8EC2-CE9DDF9E9177}
+		{DFA29E0D-8372-465E-9997-58043DA85BAA} = {C2075EA8-266E-4BF9-8EC2-CE9DDF9E9177}
+		{AFA8682A-AC96-4CCF-B9AD-68C7E4B3C3C1} = {D1DB4205-40D8-4B31-B30A-56889735110F}
+		{D3F4D7B1-1506-4668-88F9-4A31040D9FBC} = {AFA8682A-AC96-4CCF-B9AD-68C7E4B3C3C1}
+		{30969ECB-4496-4468-B1A2-ED4783CC404D} = {707E24B0-E341-4ADD-956B-CF97243CC02C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45DBF093-4BA1-43E6-9570-E03798A2E9D9}
+	EndGlobalSection
+EndGlobal
