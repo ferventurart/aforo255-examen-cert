@@ -13,14 +13,13 @@
       "UpstreamPathTemplate": "/api/token",
       "UpstreamHttpMethod": [ "Post" ]
     },
-    //INVOICE
     {
-      "DownstreamPathTemplate": "/api/invoice",
+      "DownstreamPathTemplate": "/invoice-service/api/invoice",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5002
+          "Port": 9999
         }
       ],
       "UpstreamPathTemplate": "/api/invoice",
@@ -32,12 +31,12 @@
     },
     //PAY
     {
-      "DownstreamPathTemplate": "/api/operation/pay",
+      "DownstreamPathTemplate": "/pay-service/api/operation/pay",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5003
+          "Port": 9999
         }
       ],
       "UpstreamPathTemplate": "/api/pay",
@@ -49,12 +48,12 @@
     },
     //TRANSACTION
     {
-      "DownstreamPathTemplate": "/api/transaction/{invoiceId}",
+      "DownstreamPathTemplate": "/transaction-service/api/transaction/{invoiceId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5004
+          "Port": 9999
         }
       ],
       "UpstreamPathTemplate": "/api/transaction/{invoiceId}",

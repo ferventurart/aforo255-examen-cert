@@ -34,7 +34,8 @@ namespace AFORO255.MS.TEST.Security
            services.AddDbContext<ContextDatabase>(
               opt =>
               {
-                  opt.UseSqlServer(Configuration["sql:cn"]);
+                  //opt.UseSqlServer(Configuration["sql:cn"]);
+                  opt.UseSqlServer(Configuration["cnsql"]);
               });
 
             services.AddScoped<IAccessService, AccessService>();

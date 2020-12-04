@@ -36,7 +36,8 @@ namespace AFORO255.MS.TEST.Invoice
             services.AddDbContext<ContextDatabase>(
                opt =>
                {
-                   opt.UseNpgsql(Configuration["postgres:cn"]);
+                   //opt.UseNpgsql(Configuration["postgres:cn"]);
+                   opt.UseNpgsql(Configuration["cnpostgres"]);
                });
 
             services.AddScoped<IInvoiceService, InvoiceService>();

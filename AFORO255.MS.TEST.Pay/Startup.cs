@@ -35,6 +35,7 @@ namespace AFORO255.MS.TEST.Pay
             services.AddDbContext<ContextDatabase>(
                opt =>
                {
+                   //opt.UseMySQL(Configuration["mysql:cn"]);
                    opt.UseMySQL(Configuration["mysql:cn"]);
                });
 

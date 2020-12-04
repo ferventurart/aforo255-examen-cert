@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,12 @@ namespace AFORO255.MS.TEST.Invoice
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.ConfigureAppConfiguration((host, builder) =>
+                    {
+                        var env = host.HostingEnvironment;
+                        builder.AddConfigServer(env.EnvironmentName);
+                    });
+
                     webBuilder.UseStartup<Startup>();
                 });
     }

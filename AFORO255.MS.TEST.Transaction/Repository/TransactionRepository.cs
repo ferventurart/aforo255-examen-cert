@@ -10,8 +10,8 @@ namespace AFORO255.MS.TEST.Transaction.Repository
 
         public TransactionRepository(IConfiguration configuration)
         {
-            var client = new MongoClient(configuration["mongo:cn"]);
-            //var client = new MongoClient(configuration["cnmongo"]);
+            //var client = new MongoClient(configuration["mongo:cn"]);
+            var client = new MongoClient(configuration["cnmongo"]);
             if (client != null)
                 _database = client.GetDatabase(configuration["mongo:database"]);
         }
