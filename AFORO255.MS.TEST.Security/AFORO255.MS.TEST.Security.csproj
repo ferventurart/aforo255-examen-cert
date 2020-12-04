@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AFORO.255.MS.TEST.Consul\MS.AFORO255.Cross.Consul.csproj" />
     <ProjectReference Include="..\AFORO255.MS.TEST.Jwt\MS.AFORO255.Cross.Jwt.csproj" />
   </ItemGroup>
 

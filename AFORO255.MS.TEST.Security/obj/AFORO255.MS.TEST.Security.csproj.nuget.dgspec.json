@@ -4,6 +4,97 @@
     "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Security\\AFORO255.MS.TEST.Security.csproj": {}
   },
   "projects": {
+    "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO.255.MS.TEST.Consul\\MS.AFORO255.Cross.Consul.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO.255.MS.TEST.Consul\\MS.AFORO255.Cross.Consul.csproj",
+        "projectName": "MS.AFORO255.Cross.Consul",
+        "projectPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO.255.MS.TEST.Consul\\MS.AFORO255.Cross.Consul.csproj",
+        "packagesPath": "C:\\Users\\ventuo01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO.255.MS.TEST.Consul\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ventuo01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://proget.dub.irishjobs.ie/Nuget/default": {},
+          "http://proget.saongroup.aws/nuget/Default": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[0.7.2.6, )"
+            },
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\MS.AFORO255.Cross.Jwt.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -95,6 +186,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO.255.MS.TEST.Consul\\MS.AFORO255.Cross.Consul.csproj": {
+                "projectPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO.255.MS.TEST.Consul\\MS.AFORO255.Cross.Consul.csproj"
+              },
               "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\MS.AFORO255.Cross.Jwt.csproj": {
                 "projectPath": "C:\\Users\\ventuo01\\source\\repos\\AFORO255.MS.TEST\\AFORO255.MS.TEST.Jwt\\MS.AFORO255.Cross.Jwt.csproj"
               }

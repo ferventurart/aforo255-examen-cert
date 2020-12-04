@@ -62,3 +62,11 @@ C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\obj\De
 C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\obj\Debug\netcoreapp3.1\AFORO255.MS.TEST.Security.dll
 C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\obj\Debug\netcoreapp3.1\AFORO255.MS.TEST.Security.pdb
 C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\obj\Debug\netcoreapp3.1\AFORO255.MS.TEST.Security.genruntimeconfig.cache
+C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\bin\Debug\netcoreapp3.1\Polly.dll
+C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\bin\Debug\netcoreapp3.1\MS.AFORO255.Cross.Consul.dll
+C:\Users\ventuo01\source\repos\AFORO255.MS.TEST\AFORO255.MS.TEST.Security\bin\Debug\netcoreapp3.1\MS.AFORO255.Cross.Consul.pdb

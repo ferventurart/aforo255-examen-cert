@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AFORO.255.MS.TEST.Consul\MS.AFORO255.Cross.Consul.csproj" />
     <ProjectReference Include="..\AFORO255.MS.TEST.RabbitMQ\MS.AFORO255.Cross.RabbitMQ.csproj" />
   </ItemGroup>
 
