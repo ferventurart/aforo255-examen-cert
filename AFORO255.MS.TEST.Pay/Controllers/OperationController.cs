@@ -43,6 +43,15 @@ namespace AFORO255.MS.TEST.Pay.Controllers
 
             _bus.SendCommand(payCommand);
 
+            var transactionCommand = new TransactionCreateCommand(
+                idTransaction: pay.Id_Operation,
+                idInvoice: pay.Id_Invoice,
+                amount: pay.Amount,
+                date: pay.Date
+            );
+
+            _bus.SendCommand(transactionCommand);
+
             return Ok();
         }
     }

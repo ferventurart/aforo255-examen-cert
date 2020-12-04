@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace AFORO255.MS.TEST.Transaction.RabbitMQ.EventHandlers
 {
-    public class PayEventHandler : IEventHandler<PayCreatedEvent>
+    public class TransactionEventHandler : IEventHandler<TransactionCreatedEvent>
     {
         private readonly ITransactionService _transactionService;
 
-        public PayEventHandler(ITransactionService transactionService)
+        public TransactionEventHandler(ITransactionService transactionService)
         {
             _transactionService = transactionService;
         }
 
-        public Task Handle(PayCreatedEvent @event)
+        public Task Handle(TransactionCreatedEvent @event)
         {
             _transactionService.Add(new TransactionInvoice() {
-                Id_Operation = @event.Id_Operation,
+                Id_Transaccion = @event.Id_Transaction,
                 Id_Invoice = @event.Id_Invoice,
                 Amount = @event.Amount,
                 Date = @event.Date

@@ -1,19 +1,19 @@
 ﻿using MS.AFORO255.Cross.RabbitMQ.Src.Events;
 using System;
 
-namespace AFORO255.MS.TEST.Transaction.RabbitMQ.Events
+namespace AFORO255.MS.TEST.Pay.RabbitMQ.Events
 {
-    public class PayCreatedEvent : Event
+    public class TransactionCreatedEvent : Event
     {
-        public PayCreatedEvent(int idOperation, int idInvoice, decimal amount, DateTime date)
+        public TransactionCreatedEvent(int idTransaction, int idInvoice, decimal amount, DateTime date)
         {
-            Id_Operation = idOperation;
+            Id_Transaction = idTransaction;
             Id_Invoice = idInvoice;
             Amount = amount;
             Date = date;
         }
 
-        public int Id_Operation { get; set; }
+        public int Id_Transaction { get; set; }
         public int Id_Invoice { get; set; }
         public decimal Amount { get; set; }
         public DateTime Date { get; set; }

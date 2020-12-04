@@ -47,6 +47,7 @@ namespace AFORO255.MS.TEST.Pay
             services.AddMediatR(typeof(Startup));
             services.AddRabbitMQ();
             services.AddTransient<IRequestHandler<PayCreateCommand, bool>, PayCommandHandler>();
+            services.AddTransient<IRequestHandler<TransactionCreateCommand, bool>, TransactionCommandHandler>();
             /*End RabbitMQ*/
 
             /*Start - Consul*/

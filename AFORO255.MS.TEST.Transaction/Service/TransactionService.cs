@@ -31,6 +31,7 @@ namespace AFORO255.MS.TEST.Transaction.Service
             {
                 response.Add(new TransactionResponse()
                 {
+                    Id_Transaction = item.Id_Transaccion,
                     Id_Invoice = item.Id_Invoice,
                     Amount = item.Amount,
                     Date = (DateTime) item.Date

@@ -38,8 +38,8 @@ namespace AFORO255.MS.TEST.Transaction
             services.AddMediatR(typeof(Startup));
             services.AddRabbitMQ();
 
-            services.AddTransient<PayEventHandler>();
-            services.AddTransient<IEventHandler<PayCreatedEvent>, PayEventHandler>();
+            services.AddTransient<TransactionEventHandler>();
+            services.AddTransient<IEventHandler<TransactionCreatedEvent>, TransactionEventHandler>();
             /*End - RabbitMQ*/
 
             /*Start - Consul*/
@@ -78,7 +78,7 @@ namespace AFORO255.MS.TEST.Transaction
         private void ConfigureEventBus(IApplicationBuilder app)
         {
             var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
-            eventBus.Subscribe<PayCreatedEvent, PayEventHandler>();
+            eventBus.Subscribe<TransactionCreatedEvent, TransactionEventHandler>();
         }
     }
 }
