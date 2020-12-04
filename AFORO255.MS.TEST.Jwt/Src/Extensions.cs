@@ -23,7 +23,7 @@ namespace MS.AFORO255.Cross.Jwt.Src
             {
                 var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(options.Key));
                 services.AddAuthentication()
-                            .AddJwtBearer("SECURITY-KEY", opt =>
+                            .AddJwtBearer("SECURITY-TOKEN", opt =>
                             {
                             opt.TokenValidationParameters = new TokenValidationParameters
                             {

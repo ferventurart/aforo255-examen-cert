@@ -4,16 +4,16 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:51209",
+      "applicationUrl": "http://localhost:65072",
       "sslPort": 0
     }
   },
   "profiles": {
-    "AFORO255.MS.TEST.Pay": {
+    "AFORO255.MS.TEST.Gateway": {
       "commandName": "Project",
       "launchBrowser": false,
       "launchUrl": "",
-      "applicationUrl": "http://localhost:5003",
+      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
