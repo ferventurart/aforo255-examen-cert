@@ -1,0 +1,78 @@
+{
+  "Routes": [
+    //SEGURIDAD
+    {
+      "DownstreamPathTemplate": "/api/auth",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "app-security",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/token",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    //INVOICE
+    {
+      "DownstreamPathTemplate": "/invoice-service/api/invoice",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "balancer-service-test",
+          "Port": 9999
+        }
+      ],
+      "UpstreamPathTemplate": "/api/invoice",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "SECURITY-TOKEN",
+        "AllowedScopes": []
+      }
+    },
+    //PAY
+    {
+      "DownstreamPathTemplate": "/pay-service/api/operation/pay",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "app-pay",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/pay",
+      "UpstreamHttpMethod": [ "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "SECURITY-TOKEN",
+        "AllowedScopes": []
+      }
+    },
+    //TRANSACTION
+    {
+      "DownstreamPathTemplate": "/transaction-service/api/transaction/{invoiceId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "app-transaction",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/transaction/{invoiceId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "SECURITY-TOKEN",
+        "AllowedScopes": []
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://app-gateway:8080",
+    "RateLimitOptions": {
+      "ClientWhitelist": [],
+      "EnableRateLimiting": true,
+      "Period": "30s",
+      "PeriodTimespan": 1,
+      "Limit": 100
+    }
+  }
+}
