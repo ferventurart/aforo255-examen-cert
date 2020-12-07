@@ -2882,7 +2882,10 @@
         },
         "runtime": {
           "bin/placeholder/MS.AFORO255.Cross.Jwt.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
